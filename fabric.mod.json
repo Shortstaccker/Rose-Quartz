@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "rosequartz",
+  "version": "v11-1.21.4",
+  "name": "Rose-Quartz",
+  "description": "A mod that reduces ping depending on proxy. (helps with multi regional servers).",
+  "environment": "client",
+  "contact": {
+    "sources": "https://github.com/Shortstaccker/Rose-Quartz"
+  },
+  "mixins": [
+    "rosequartz.mixins.json",
+    "rozequartz.client.mixins.json"
+  ],
+  "entrypoints": {
+    "client": [
+      "com.rosequartz.rosequartzmod.Rosequartzmod"
+    ],
+    "modmenu": [
+      "com.rosequartz.rosequartzmod.RoseQuartzModMenuIntegration"
+    ]
+  },
+  "authors": ["Shortstaccker"],
+  "license": "MIT",
+  "icon": "assets/rosequartz/icon.png",
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*",
+    "cloth-config2": "*"
+  }
+}
